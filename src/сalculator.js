@@ -285,7 +285,11 @@ export default function Calculator() {
         if (btn === 'MR') {
             if (a !== '' && sign !== '') {
                 b = memory;
-                out.textContent = b;
+                if (sign === '10x') out.innerHTML = `10<sup>${b}</sup>`;
+                else if (sign === '^') out.innerHTML = `${a}<sup>${b}</sup>`;
+                else if (sign === '1/x') out.innerHTML = `1/${b}`;
+                else if (sign === '√') out.innerHTML = `<sup class="sup_qrt">${b}</sup>√<span class="span_qrt">${a}</span>`;
+                else out.textContent = b;
             } else {
                 a = memory;
                 out.textContent = a;
