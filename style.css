@@ -1,0 +1,107 @@
+.calc {
+    margin: 50px auto;
+    width: 320px;
+    height: 328px;
+    border-radius: 10px;
+    background: black;
+    color: #fff;
+    font-style: initial;
+    padding: 15px;
+    box-shadow: 4px 4px 4px #4f4f4f4f;
+}
+
+.screen {
+    height: 30px;
+    padding: 10px;
+    display: grid;
+    margin-bottom: 18px;
+    line-height: 25px;
+    border-radius: 5px;
+    background-color: lightgray;
+    overflow: hidden;
+}
+
+.screen p {
+    text-align: right;
+    font-size: 3rem;
+    margin: 0;
+    color: black;
+}
+
+.screen sup {
+    font-size: 1.2rem;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas: "mc mplus mminus mr color color" "1x percent clear del plus-minus division" "fact pow_2  seven eight nine milti" "2x pow_3 four five six minus" "3x pow_y one two three plus" "yx 10_pow_x zero zero dot equal";
+    grid-gap: 4px;
+    justify-items: center;
+}
+
+.button {
+    width: 50px;
+    height: 40px;
+    background: #333;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button.ac {
+    background-color: orangered;
+}
+
+.button.del {
+    background-color: orangered;
+}
+
+.button.zero {
+    grid-area: zero;
+    width: 100%;
+}
+
+.button.color input {
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+
+.button.pow {
+    line-height: 30px;
+}
+
+.button.sqrt {
+    line-height: 30px;
+}
+
+.sup_qrt {
+    position: relative;
+    top: -4px;
+    margin-right: -6px;
+    font-size: 0.8rem;
+}
+
+.span_qrt {
+    border-top: 1px solid currentColor;
+}
+
+.button:hover {
+    filter: brightness(120%);
+}
+
+.button:active {
+    filter: brightness(90%);
+}
+
+.button.btn-grey {
+    background: #a6a6a6;
+}
+
+.button.btn-orange {
+    background: #ff9501;
+}
+
+
