@@ -1,4 +1,4 @@
-const digit = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.',];
+//const digit = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.',];
 const action = ['C', '=', '-', '+', 'X', '÷', 'x2', 'x3', 'xy', '10x', '1/x', '2√x', '3√x', 'y√x', '!', '%', '+/-', 'MC', 'MR', 'M+', 'M-'];
 
 //реализация
@@ -360,4 +360,4 @@ export default function Calculator() {
             return [a, b, c, sign, finish, out.textContent];
         }
     };
-};
+}

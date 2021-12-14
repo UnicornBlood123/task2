@@ -24,11 +24,11 @@ document.querySelector('.buttons').onclick = (event) => {
     }
 }
 
-document.querySelector('#color_pick1').onchange = (event) => {
+document.querySelector('#color_pick1').onchange = () => {
     acc.pressColor('1');
 }
 
-document.querySelector('#color_pick2').onchange = (event) => {
+document.querySelector('#color_pick2').onchange = () => {
     acc.pressColor('2');
 }
 

@@ -4,7 +4,7 @@ function Command() {
     };
     this.undo = function () {
     };
-};
+}
 
 //команда нажатия на цифру или точку
 function PressButtonCommand(calculator, value) {
@@ -16,7 +16,7 @@ function PressButtonCommand(calculator, value) {
     this.undo = function () {
         calculator.setResult(undoResult);
     };
-};
+}
 PressButtonCommand.prototype = new Command();
 PressButtonCommand.prototype.constructor = PressButtonCommand;
 
@@ -30,7 +30,7 @@ function PressSignCommand(calculator, value) {
     this.undo = function () {
         calculator.setResult(undoResult);
     };
-};
+}
 PressSignCommand.prototype = new Command();
 PressSignCommand.prototype.constructor = PressSignCommand;
 
@@ -39,7 +39,7 @@ function PressColorCommand (calculator, value) {
     this.execute = function () {
         calculator.setColor(value);
     };
-};
+}
 PressColorCommand.prototype = new Command();
 PressColorCommand.prototype.constructor = PressColorCommand;
 
